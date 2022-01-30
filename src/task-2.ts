@@ -1,5 +1,3 @@
-type FIXME = Order['state'];
-
 type Order =
   | {
       state: "initial";
@@ -32,4 +30,6 @@ type Order =
       fullfillmentDate: Date;
     };
 
-export const getOrderState = (order: Order): FIXME => order.state; 
+type FIXME = Order["state"];
+
+export const getOrderState = (order: Order): FIXME => order.state;

@@ -1,5 +1,3 @@
-type FIXME = Exclude<OrderState, {state:'buyingSupplies' | 'producing'}>[];
-
 const orderStates = [
   "initial",
   "inWork",
@@ -9,7 +7,8 @@ const orderStates = [
 ] as const;
 
 type OrderState = typeof orderStates[number];
-export const getUserOrderStates = (orderStates: OrderState[]): FIXME =>
-  orderStates.filter(
+type FIXME = Exclude<OrderState, { state: "buyingSupplies" | "producing" }>[];
+export const getUserOrderStates = (orderState: OrderState[]): FIXME =>
+  orderState.filter(
     (state) => state !== "buyingSupplies" && state !== "producing"
   );

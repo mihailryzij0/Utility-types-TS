@@ -1,5 +1,3 @@
-type FIXME = Exclude<OrderState, "buyingSupplies" | "producing">[];
-
 const orderStates = [
   "initial",
   "inWork",
@@ -9,14 +7,13 @@ const orderStates = [
 ] as const;
 
 type OrderState = typeof orderStates[number];
-
-export const getUserOrderStates = (orderStates: OrderState[]): FIXME => {
-  const filteredStates = [] as FIXME;
+type FIXME = Exclude<OrderState, "buyingSupplies" | "producing">[];
+export const getUserOrderStates = (orderState: OrderState[]): FIXME => {
+  const filteredState = [] as FIXME;
   orderStates.forEach((element) => {
     if (element !== "buyingSupplies" && element !== "producing") {
-      filteredStates.push(element);
+      filteredState.push(element);
     }
   });
-  return filteredStates;
+  return filteredState;
 };
-
