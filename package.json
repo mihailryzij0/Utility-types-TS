@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest",
     "lint": "eslint . && prettier --check . && tsc --noEmit",
+    "firebase:e":"firebase emulators:start",
     "lint:fix": "eslint . --fix && prettier --write .",
     "prepare": "husky install",
     "build": "webpack build --node-env production",
@@ -65,7 +66,7 @@
     "webpack-dev-server": "^4.5.0"
   },
   "dependencies": {
-    "core-js": "^2.6.12"
+    "firebase": "^9.6.6"
   },
   "lint-staged": {
     "*.js,*.ts": [

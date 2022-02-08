@@ -6,7 +6,7 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 const { NODE_ENV } = process.env;
 module.exports = {
-  entry: resolve(__dirname, "src/index.ts"),
+  entry: resolve(__dirname, "src/Storage-API/CRUD.ts"),
   output: {
     filename: "index.js",
     path: resolve(`${__dirname}/dist`),
@@ -76,7 +76,7 @@ module.exports = {
   mode: NODE_ENV === "production" ? "production" : "development",
   plugins: [
     new HtmlWebpackPlugin({
-      template: resolve(__dirname, "src/index.pug"),
+      template: resolve(__dirname, "src/index.html"),
     }),
     // new HtmlWebpackPlugin({
     //   template: "./src/feedBack.pug",
