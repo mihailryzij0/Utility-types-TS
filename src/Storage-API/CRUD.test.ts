@@ -1,9 +1,9 @@
+import { deleteApp } from "firebase/app";
 import { CRUD } from "./CRUD";
 import { WorkingFirebaise } from "./workingFirebaise";
 import { WorkingLocalStorage } from "./workingLocalStorage";
 import { ITaskService, Task, IworkingStorage } from "./intrfisceProgram";
 import { app } from "./firebaseConfig";
-import { deleteApp} from "firebase/app";
 
 describe("CRUD working with Firebaise", () => {
   let serviceFirebaise: IworkingStorage;
@@ -37,9 +37,9 @@ describe("CRUD working with Firebaise", () => {
     ];
     serviceFirebaise.saveStorageArray(storageArray);
   });
- afterAll(()=>{
-  deleteApp(app)
- })
+  afterAll(() => {
+    deleteApp(app);
+  });
 
   it("checking the saving to the database", async () => {
     const data = await serviceFirebaise.loadStorageArray();
