@@ -16,9 +16,6 @@ jobs:
       - name: Lint check
         run: |
           npm run lint
-      - name: run emulator firebaise
-        run: |
-          npm run firebase:e
       - name: test
         run: |
           npm run test
