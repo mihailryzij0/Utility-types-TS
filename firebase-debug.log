@@ -1,34 +1,35 @@
-[debug] [2022-02-08T11:17:51.473Z] ----------------------------------------------------------------------
-[debug] [2022-02-08T11:17:51.475Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\79229\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
-[debug] [2022-02-08T11:17:51.475Z] CLI Version:   10.1.4
-[debug] [2022-02-08T11:17:51.475Z] Platform:      win32
-[debug] [2022-02-08T11:17:51.475Z] Node Version:  v14.17.6
-[debug] [2022-02-08T11:17:51.476Z] Time:          Tue Feb 08 2022 14:17:51 GMT+0300 (Москва, стандартное время)
-[debug] [2022-02-08T11:17:51.476Z] ----------------------------------------------------------------------
+[debug] [2022-02-09T12:20:28.712Z] ----------------------------------------------------------------------
+[debug] [2022-02-09T12:20:28.714Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\79229\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-02-09T12:20:28.714Z] CLI Version:   10.1.4
+[debug] [2022-02-09T12:20:28.714Z] Platform:      win32
+[debug] [2022-02-09T12:20:28.714Z] Node Version:  v14.17.6
+[debug] [2022-02-09T12:20:28.715Z] Time:          Wed Feb 09 2022 15:20:28 GMT+0300 (Москва, стандартное время)
+[debug] [2022-02-09T12:20:28.715Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2022-02-08T11:17:51.528Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2022-02-08T11:17:51.528Z] > authorizing via signed-in user (ryzijmihail4@gmail.com)
+[debug] [2022-02-09T12:20:28.718Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-02-09T12:20:28.777Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-02-09T12:20:28.778Z] > authorizing via signed-in user (ryzijmihail4@gmail.com)
 [info] i  emulators: Starting emulators: database {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: database"}}
-[debug] [2022-02-08T11:17:51.553Z] [hub] writing locator at C:\Users\79229\AppData\Local\Temp\hub-oceanic-trees-333612.json
-[debug] [2022-02-08T11:17:51.564Z] > refreshing access token with scopes: []
-[debug] [2022-02-08T11:17:51.565Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+[debug] [2022-02-09T12:20:28.791Z] [hub] writing locator at C:\Users\79229\AppData\Local\Temp\hub-oceanic-trees-333612.json
+[debug] [2022-02-09T12:20:28.864Z] > refreshing access token with scopes: []
+[debug] [2022-02-09T12:20:28.864Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  <request body omitted>
-[debug] [2022-02-08T11:17:52.090Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 08 Feb 2022 11:17:51 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2022-02-08T11:17:52.114Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/oceanic-trees-333612 [none]
-[debug] [2022-02-08T11:17:52.602Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/oceanic-trees-333612 200
-[debug] [2022-02-08T11:17:52.602Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/oceanic-trees-333612 {"projectId":"oceanic-trees-333612","projectNumber":"987351003041","displayName":"My Project 64794","name":"projects/oceanic-trees-333612","resources":{"hostingSite":"oceanic-trees-333612"},"state":"ACTIVE"}
-[debug] [2022-02-08T11:17:52.603Z] database rules config:  []
+[debug] [2022-02-09T12:20:29.408Z] <<< HTTP RESPONSE 200 {"date":"Wed, 09 Feb 2022 12:20:29 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-02-09T12:20:29.426Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/oceanic-trees-333612 [none]
+[debug] [2022-02-09T12:20:30.083Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/oceanic-trees-333612 200
+[debug] [2022-02-09T12:20:30.083Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/oceanic-trees-333612 {"projectId":"oceanic-trees-333612","projectNumber":"987351003041","displayName":"My Project 64794","name":"projects/oceanic-trees-333612","resources":{"hostingSite":"oceanic-trees-333612"},"state":"ACTIVE"}
+[debug] [2022-02-09T12:20:30.083Z] database rules config:  []
 [warn] !  database: Did not find a Realtime Database rules file specified in a firebase.json config file. The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration. {"metadata":{"emulator":{"name":"database"},"message":"Did not find a Realtime Database rules file specified in a firebase.json config file. The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration."}}
-[debug] [2022-02-08T11:17:52.606Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
-[debug] [2022-02-08T11:17:52.606Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2022-02-08T11:17:52.606Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
-[debug] [2022-02-08T11:17:52.606Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","C:\\Users\\79229\\.cache\\firebase\\emulators\\firebase-database-emulator-v4.7.3.jar","--host","localhost","--port",4010],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\79229\\\\.cache\\\\firebase\\\\emulators\\\\firebase-database-emulator-v4.7.3.jar\",\"--host\",\"localhost\",\"--port\",4010],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\"],\"joinArgs\":false}"}}
+[debug] [2022-02-09T12:20:30.086Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-02-09T12:20:30.086Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-02-09T12:20:30.087Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2022-02-09T12:20:30.087Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","C:\\Users\\79229\\.cache\\firebase\\emulators\\firebase-database-emulator-v4.7.3.jar","--host","localhost","--port",4010],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\79229\\\\.cache\\\\firebase\\\\emulators\\\\firebase-database-emulator-v4.7.3.jar\",\"--host\",\"localhost\",\"--port\",4010],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\"],\"joinArgs\":false}"}}
 [info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
-[debug] [2022-02-08T11:17:53.896Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2022-02-08T11:17:53.896Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
-[debug] [2022-02-08T11:17:53.896Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\79229\\.cache\\firebase\\emulators\\ui-v1.6.4\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\79229\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.6.4\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[debug] [2022-02-09T12:20:31.666Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-02-09T12:20:31.666Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-02-09T12:20:31.666Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\79229\\.cache\\firebase\\emulators\\ui-v1.6.4\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\79229\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.6.4\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
 [info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
-[debug] [2022-02-08T11:17:53.981Z] Web / API server started at localhost:4000
+[debug] [2022-02-09T12:20:31.763Z] Web / API server started at localhost:4000
  {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
 [info] 
 ┌─────────────────────────────────────────────────────────────┐

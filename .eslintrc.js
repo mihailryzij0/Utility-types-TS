@@ -20,7 +20,7 @@ module.exports = {
   rules: {
     "import/prefer-default-export": "off",
     "no-unused-expressions": "off",
-    "no-empty-source": "off",
+    "class-methods-use-this": "off",
     "max-len": [
       "error",
       {

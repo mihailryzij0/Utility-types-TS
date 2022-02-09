@@ -1,14 +1,13 @@
-import{Task} from './intrfisceProgram'
+import { Task } from "./intrfisceProgram";
 
 const localStorageKey = "taskStorage";
-export class WorkingLocalStorage{
-  
-   loadStorageArray = (): Task[] => {
+export class WorkingLocalStorage {
+  loadStorageArray = (): Promise<Task[]> => {
     const jsonStorage = localStorage.getItem(localStorageKey) || "[]";
     return JSON.parse(jsonStorage);
   };
 
-   saveStorageArray = (storageArray: Task[]): void => {
+  saveStorageArray = (storageArray: Task[]): void => {
     localStorage.setItem(localStorageKey, JSON.stringify(storageArray));
   };
 }
