@@ -17,6 +17,7 @@ jobs:
           npm run lint
       - name: run emulator firebaise
         run: |
+          npm install --save firebase
           npm run firebase:e
       - name: test
         run: |
