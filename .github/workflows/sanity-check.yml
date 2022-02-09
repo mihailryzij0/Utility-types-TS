@@ -12,12 +12,12 @@ jobs:
       - name: Install Packages
         run: |
           npm install
+          npm install --save firebase
       - name: Lint check
         run: |
           npm run lint
       - name: run emulator firebaise
         run: |
-          npm install --save firebase
           npm run firebase:e
       - name: test
         run: |
